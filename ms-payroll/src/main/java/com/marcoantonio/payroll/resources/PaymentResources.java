@@ -1,4 +1,6 @@
-package com.marcoteixeira.payroll.resources;
+package com.marcoantonio.payroll.resources;
+
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -7,8 +9,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.marcoteixeira.payroll.entities.Payment;
-import com.marcoteixeira.payroll.services.PaymentService;
+import com.marcoantonio.payroll.entities.Payment;
+import com.marcoantonio.payroll.services.PaymentService;
+
+;
 
 @RestController
 @RequestMapping(value = "/payments")

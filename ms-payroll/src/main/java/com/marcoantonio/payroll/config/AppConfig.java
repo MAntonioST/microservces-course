@@ -1,4 +1,6 @@
-package com.marcoteixeira.config;
+package com.marcoantonio.payroll.config;
+
+
 
 
 import org.springframework.context.annotation.Bean;

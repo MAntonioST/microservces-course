@@ -1,4 +1,6 @@
-package com.marcoteixeira.payroll.entities;
+package com.marcoantonio.payroll.entities;
+
+
 
 import java.io.Serializable;
 

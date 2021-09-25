@@ -1,4 +1,4 @@
-package com.marcoteixeira.payroll;
+package com.marcoteixeira;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

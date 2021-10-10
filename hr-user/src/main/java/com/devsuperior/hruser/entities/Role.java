@@ -9,23 +9,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_roler")
+@Table(name = "tb_role")
 public class Role implements Serializable {
-
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String roleNames;
+	private String roleName;
 	
 	public Role() {
-
 	}
 
-	public Role(Long id, String roleNames) {
+	public Role(Long id, String roleName) {
+		super();
 		this.id = id;
-		this.roleNames = roleNames;
+		this.roleName = roleName;
 	}
 
 	public Long getId() {
@@ -36,19 +35,19 @@ public class Role implements Serializable {
 		this.id = id;
 	}
 
-	public String getRoleNames() {
-		return roleNames;
+	public String getRoleName() {
+		return roleName;
 	}
 
-	public void setRoleNames(String roleNames) {
-		this.roleNames = roleNames;
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((roleNames == null) ? 0 : roleNames.hashCode());
+		result = prime * result + ((roleName == null) ? 0 : roleName.hashCode());
 		return result;
 	}
 
@@ -61,12 +60,11 @@ public class Role implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Role other = (Role) obj;
-		if (roleNames == null) {
-			if (other.roleNames != null)
+		if (roleName == null) {
+			if (other.roleName != null)
 				return false;
-		} else if (!roleNames.equals(other.roleNames))
+		} else if (!roleName.equals(other.roleName))
 			return false;
 		return true;
 	}
-
 }
